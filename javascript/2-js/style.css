@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+   div{
+              padding: 10px;
+              margin: 10px;
+              border: .1rem solid ;
+              border-radius: 5px;
+              
+          }
+          input{
+              border-radius: 5px;
+              padding: 1rem;
+              font-size: 25px;
+              
+              
+          }
+          button{
+              border: none;
+              border-radius: 5px;
+              padding: .8rem;
+              background-color: red;
+              color: white;
+          }
+          .hide{
+              display: none;
+            /* display: inline-block; */
+          }
+          button.hide{
+              background-color:green;
+          }

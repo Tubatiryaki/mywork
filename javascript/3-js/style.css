@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  .disableInput{
+    border: none;
+   background: none;
+   
+  }
+  .enableInput{
+    border: 1;
+   background: white;
+   
+  }

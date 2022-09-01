@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    select{
+        font-size: 2.5rem;
+        border-radius: .5rem;
+       
+    
+    }
+    input{
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 1rem;
+        border-radius: .5rem;
+        border-color: lightblue;
+        
+        
+    }
+   button{
+    padding:1rem;
+    font-size: 1rem;
+    background-color:red;
+    color: white;
+    border-radius: .5rem;
+    border: none;
+   }
+
+  </style>
+ 
+</head>
+
+<body>
+  <input type="text" id="num1">
+ 
+  <input type="text" id="num2" name="num2">
+  <select id="islem">
+    <option value="toplam">+</option>
+    <option value="cikarma">-</option>
+    <option value="bolme">/</option>
+    <option value="carpma">*</option>
+  </select>
+  <button
+    onclick="hesapla(document.querySelector('#num1').value,document.querySelector('#num2').value,document.querySelector('#islem').value)">hesapla</button>
+  <h3 id="sonuc">....</h3>
+  <script src="script.js"></script>
+  <script>
+    function hesapla(num1, num2, islem) {
+      if (islem == "toplam") {
+        document.querySelector("#sonuc").innerText = Number(num1) + Number(num2);
+      } else if (islem == "cikarma") {
+        document.querySelector("#sonuc").innerText = Number(num1) - Number(num2);
+      } else if (islem == "bolme") {
+        document.querySelector("#sonuc").innerText = Number(num1) / Number(num2);
+      } else if (islem == "carpma") {
+        document.querySelector("#sonuc").innerText = Number(num1) * Number(num2);
+      }
+    }
+  </script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+</body>

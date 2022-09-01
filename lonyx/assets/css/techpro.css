@@ -1,0 +1,106 @@
+:root{
+    --color1:#00a818;
+    --color2: #3f8ab5;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+
+
+}
+header .logo{
+    max-width: 400px;
+    height: auto;
+}
+header nav.menu .toggle{
+    background-color: var(--color1);
+    padding: .5rem;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    color: white;
+    display: none;
+
+}
+header nav.menu ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+header nav.menu ul a{
+    text-decoration: none;
+    background-color: var(--color1);
+    color: white;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: 0.2rem;
+
+}
+header nav.menu ul a:hover{
+    background-color: var(--color2);
+
+}
+section.content{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+
+}
+main{
+    flex: 4 1 600px;
+}
+main .about-us{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+main .about-us div{
+    flex: 3 1 200px;
+
+}
+main .about-us div p{
+    flex: 5 1 400px;
+
+}
+aside{
+    flex: 1 1 200px;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+
+}
+aside .box{
+    flex: 1 1 200px;
+
+}
+footer{
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    flex-wrap: wrap;
+
+
+}
+footer img{
+    width: 200px;
+
+}
